@@ -11,13 +11,27 @@ body {
     width: 100vw;
     /*vw sta per view width, quindi gli stiamo dicendo che deve essere largo come tutta la larghezza visibile. Con 100% gli diciamo che deve essere il 100% DEL GENITORE, non del viewport*/
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: song play;
+    /* align-items: center;
+    justify-items: center;*/
+}
+
+.logo {
+    width: 300px;
+}
+
+.div-song {
+    display: grid;
+    padding: 50px;
 }
 
 .last-section {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto auto;
-    
+    grid-template-columns: auto auto;  
 }
 
 .mouth {
@@ -56,4 +70,32 @@ body {
         height: 100vw;
         
     }
+}
+
+.second-section {
+    background-color: #660099;
+}
+
+.fourth-section {
+    background-color: #660099;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: "1000px"
+}
+
+.eigth-section {
+    background-color: #660099;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: "1000px"
+}
+
+.last-page-img {
+    width: 100%;
+}
+
+.illustration-img {
+    width: 100%;
 }
