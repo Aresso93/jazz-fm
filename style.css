@@ -103,6 +103,51 @@ body {
     width: "1000px";
 }
 
+.fifth-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    border: solid 1px;
+    grid-template-areas: "schedule schedule circle"
+                         ".        .        monday"
+                         "tuesday  wednesday ."
+                         ".        thursday  ."
+                         ".        .         friday"
+                         "saturday sunday    ."
+}
+
+.div-circle {
+    grid-area: circle;
+}
+
+.div-monday {
+    grid-area: monday;
+}
+
+.div-tuesday {
+    grid-area: tuesday;
+}
+
+.div-wednesday {
+    grid-area: wednesday;
+}
+
+.div-thursday {
+    grid-area: thursday;
+}
+
+.div-friday {
+    grid-area: friday;
+}
+
+.div-saturday {
+    grid-area: saturday;
+}
+
+.div-sunday {
+    grid-area: sunday;
+}
+
 .sixth-section {
     background-color: #ffcc00;
     display: grid;
