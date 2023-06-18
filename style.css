@@ -6,6 +6,12 @@ body {
     margin: 0px;
 }
 
+img {
+    vertical-align: middle;
+    /*copiato bellamente dalla sorgente della pagina, chiedere ad Andrea come mai funziona*/
+    width: 100%;
+  }
+
 .first-section {
     background-color: #ffcc00;
     width: 100vw;
@@ -28,7 +34,6 @@ body {
     position: absolute;
     bottom: 40px;
     left: 16px;
-    border: 1px solid black;
 }
 
 .singer {
@@ -38,6 +43,7 @@ body {
 .div-song {
     display: grid;
     padding: 2px;
+    margin: 24px;
     justify-self: bottom;
     position: relative;
 }
@@ -93,14 +99,83 @@ body {
 
 .second-section {
     background-color: #660099;
+    width: 100vw;
+}
+
+.third-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "howto howto circle" 
+                         "to to fm"
+                         "online lettera lettera"
+                         "devices devices devices"
+                         "letterz letterz letterz";
+    background-color: #ffcc00;
+}
+
+.circle-listen {
+    grid-area: circle;
+}
+
+.howto {
+    grid-area: howto;
+    text-transform: uppercase;
+    font-size: 200px;
+    
+}
+
+
+.online {
+    grid-area: online;
+}
+
+.lettera {
+    grid-area: lettera;
+}
+
+.letterz {
+    grid-area: letterz;
+    float: right;
+ 
+    margin-right: 0px;
+    margin-left: 24px;
+    margin-bottom: 100px;
+}
+
+.to {
+    grid-area: to;
+    text-transform: uppercase;
+    font-size: 200px;
+}
+
+.fm {
+    grid-area: fm;
+    font-size: 100px;
+}
+
+.listen-number {
+    font-size: 60px;
+    border-bottom: 1px solid;
+}
+
+.letterz-img {
+    width: 49%;
+    align-self: auto;
+}
+
+.letterj-img {
+    width: 50%;
+margin-left: 25px;
+margin-top: -150px;
+vertical-align: middle;
+position: relative;
+top: 0px;
 }
 
 .fourth-section {
     background-color: #660099;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    width: "1000px";
+    width: 100vw;
 }
 
 .fifth-section {
@@ -113,11 +188,31 @@ body {
                          "tuesday  wednesday ."
                          ".        thursday  ."
                          ".        .         friday"
-                         "saturday sunday    ."
+                         "saturday sunday    .";
+width: 100vw;
+margin-bottom: 270px;
+}
+
+.div-schedule {
+    font-size: 350px;
 }
 
 .div-circle {
     grid-area: circle;
+    margin-bottom: 280px;
+}
+
+.div-week {
+    border-top: 1px solid;
+    font-size: 45px;
+    margin: 24px;
+}
+
+.div-weekend {
+    border-top: 1px solid;
+    border-top: 1px solid;
+    font-size: 45px;
+    margin: 24px;
 }
 
 .div-monday {
@@ -153,6 +248,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    width: 100vw;
 }
 
 .div-keyboard {
@@ -172,17 +268,44 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    width: 100vw;
+    padding: 24px;
+    grid-template-areas: "sheep-column"
+                         "div-event";
+}
+
+.div-event .span-city {
+    float: right;
+}
+
+.div-event .span-event {
+    float: left;
+}
+
+.span-city {
+        font-size: 2.4rem;
+        line-height: 4rem;
+    }
+
+.span-event {
+        font-size: 2.4rem;
+        line-height: 4rem;
+        
+}
+
+.div-event {
+    margin: 0px;
+    /* font-size: 200%; */
+    grid-area: div-event;
 }
 
 .hr-places {
     color: white;
 }
 
-.eigth-section {
+.eighth-section {
     background-color: #660099;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+    width: 100vw;
 }
 
 .ninth-section {
@@ -190,6 +313,9 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    grid-template-areas: "contact circle"
+                         ". contact information";
+    width: 100vw;
 }
 
 .last-page-img {
@@ -197,14 +323,29 @@ body {
 }
 
 .contact {
-    font-size: 300px;
+    position: sticky;
+    top: 0;
 }
 
-.illustration-img {
-    width: 100%;
+.contact-text {
+font-size: 250px;
+font-weight: 600;
+text-transform: uppercase;
+line-height: 170px;
+letter-spacing: -10px;
+margin: 0;
+}
+
+.contact-information {
+    padding: 16px;
+    grid-area: contact information;
+    margin: 16px;
 }
 
 .sheep-column {
     justify-self: center;
     align-self: center;
+    position: sticky;
+    top: 0;
+    grid-area: sheep-column;
 }
