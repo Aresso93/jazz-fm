@@ -78,7 +78,7 @@ img {
 }
 
 @media (max-width: 768px) {
-    .last-section {
+    .first-section {
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: auto;
